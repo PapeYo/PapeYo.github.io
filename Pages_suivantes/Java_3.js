@@ -1,6 +1,6 @@
 function Valider() {
     let code = document.getElementById("code").value;
-    if (code === "vous gardez calme ou vous deviene fous") {
+    if (code == "vous gardez calme ou vous deviene fous" || code == "Vous gardez calme ou vous deviene fous") {
         alert("Le décodage n'a aucun secret pour vous. Mais quel est donc ce bruit qui se fait entendre ?");
         document.getElementById("suite").style.display = "block";
     } else {
@@ -10,7 +10,9 @@ function Valider() {
 
 function VerifKanji() {
     let kanji = document.getElementById("kanji").value;
-    if (kanji == "ténèbres" || kanji == "tenebres" || kanji == "obscurité" || kanji == "obscurite") {
+    let sol_kanji = ["ténèbres", "tenebres", "obscurité", "obscurite"];
+    if (sol_kanji.includes(kanji)) {
+        alert("Effectivement, ce kanji évoque la notion d'obscurité et de ténèbres. Maintenant, faîtes le bon choix ...");
         document.getElementById("hide").style.display = "block";
         document.getElementById("fleche").style.display = "inline";
     } else {
