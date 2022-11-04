@@ -5,7 +5,7 @@ function goodAnswer() {
 
     let answer1 = (erreur1 === "poteau");
     let answer2 = (erreur2 === "rien");
-    let answer3 = (erreur3 === "bulle" || erreur3 === "boule");
+    let answer3 = (erreur3 === "bulle" || erreur3 === "boule" || erreur3 === "cercle");
 
     if (answer1 && answer2 && answer3) {
         alert("Vous avez vu juste pour les trois réponses, GG ! Regardez tout en bas pour continuer");
