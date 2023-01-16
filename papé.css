@@ -22,6 +22,12 @@ h4 {
     text-align: center;
 }
 
+ul{
+    display : inline-block;
+    margin :auto;
+    text-align:left;
+}
+
 a {
     color:gold;
 }
