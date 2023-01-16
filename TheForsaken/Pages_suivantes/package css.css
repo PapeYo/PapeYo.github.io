@@ -1,0 +1,43 @@
+html {
+    background-color: black;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 10px;
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h1 {
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+    text-decoration-color: red;
+}
+
+p {
+    text-align: justify;
+}
+
+#date {
+    font-weight: bold;
+    color:fuchsia;
+}
+
+#TexteRaconté {
+    font-style: italic;
+    color: yellow;
+}
+
+#consigne {
+    font-weight: bold;
+    color:lime;
+}
+
+a {
+    color:cyan;
+}

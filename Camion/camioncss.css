@@ -1,0 +1,37 @@
+html {
+    background-color: black;
+    color: white;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h1 {
+    color: cyan;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration-line: underline;
+    text-decoration-style: double;
+    text-decoration-color: red;
+}
+
+h2 {
+    color:red;
+    text-decoration-line: underline;
+    text-decoration-style: wavy;
+    text-decoration-color: cyan;
+    text-align: center;
+}
+
+p {
+    text-align: center;
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+a {
+    text-transform: uppercase;
+    color:yellow;
+}

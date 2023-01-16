@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entrée dans le bâtiment</title>
+    <link rel="stylesheet" href="package css.css">
+    <script type="text/javascript" src="Java_3.js"></script>
+</head>
+<header>
+    <h1>
+        A l'entrée de l'Aradale Mental Hospital
+    </h1>
+</header>
+<style>
+    img {
+        background-color: white;
+    }
+</style>
+
+<body>
+    <p id="date">
+        13 Mars 2022
+    </p>
+    <p>
+        Après vous être préparé pour cet événement capital dans la mise en oeuvre de votre infiltration, vous vous
+        rendez sur place avec plusieurs heures d'avance afin d'observer si possible les moindres faits et gestes qui
+        peuvent s'y dérouler. Malgré vos trois heures d'avance ainsi que votre planque parfaite dans un buisson à
+        l'écart du bâtiment vous laissant tout de même une vue imprenable sur l'entrée de ce dernier, vous n'observez
+        rien qui puisse sortir de l'ordinaire puisque vous ne voyez tout simplement personne arriver. Ce n'est que
+        durant la dernière demie-heure avant l'heure indiquée sur le mur que vous voyez des gens arriver et que vous
+        supposez être ici avec le même objectif que vous : rejoindre les Forsaken.
+    </p>
+    <img src="Images/Enigme_1/Aradale_Mental_Hospital.png" alt="hôpital abandonné" width="75%">
+    <p>
+        A 14h, un incessant bruit de pas vous fait remarquer que toutes les personnes présentes se dirigent sous le
+        porche à droite de la porte principale. Elles répondent toutes une à une à un téléphone accroché au mur avant de
+        s'y engouffrer. Cela fait trois heures que vous êtes ici et vous êtes sûrs et certains que l'ouverture n'était
+        pas présente à votre arrivée. Après plusieurs passages, vous constatez que la fente s'ouvre et se referme au
+        rythme des réponses des individus dans le combiné. Vous comprenez alors qu'un mot de passe est requis afin de
+        rentrer. Une fois que la plupart des personnes sont rentrées, vous décidez de sortir de votre cachette et de
+        rejoindre celles restantes sous le porche. Tout le monde est dorénavent à l'intérieur du bâtiment, tout le monde
+        sauf vous.
+    </p>
+
+    <p id="consigne">
+        Que devez-vous prononcer afin de voir le mur s'ouvrir devant vous ?
+    </p>
+    <input type="text" id="code" style="width:20%;" placeholder="Code secret">
+    <button onclick="Valider()"> Valider </button>
+
+    <section id="suite" style="display: none">
+        <style>
+            .grille {
+                display: grid;
+                grid-template-columns: 2fr 3fr;
+            }
+
+            .grille2 {
+                display: grid;
+                grid-template-columns: repeat(4, 1fr);
+            }
+
+            .grille3 {
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+            }
+        </style>
+        <div class="grille">
+            <div>
+                <p>
+                    Le mur s’ouvre devant vous, sans que vous ne compreniez comment. Une brise commence à souffler
+                    doucement sur votre nuque comme pour vous inviter à entrer dans la fente. Vous vous faufilez comme
+                    vous le pouvez, et découvrez une immense pièce remplie de végétaux en tout genre, dont certains que
+                    vous ne connaissez même pas, d’un ruisseau sorti de nulle part et des personnes présentes à
+                    l'extérieur précédemment et rassemblées maintenant au milieu de la pièce. Quelques instants plus
+                    tard, arrivent devant vous des hommes masqués du même apparat que l’homme de la vidéo. Tous vêtus de
+                    différentes toges de couleur, vous arrivez à distinguer leur grand sourire derrière leur masque.
+                    L’un d’entre eux s’avance et vous remarquez qu’il a les mains tachées comme celles d’un vieillard.
+                    Il dit alors :
+                </p>
+                <p id="TexteRaconté">
+                    Bienvenue à vous, futurs apprentis ! Vous êtes ici pour faire vos preuves et nous montrer qu’un
+                    souffle magique existe en vous, une magie portée par le désespoir et la solitude. Cette épreuve
+                    est la première d’une longue série, bien plus éprouvante et tortueuse que ce petit jeu enfantin.
+                    Observez vos mains et découvrez l’énergie qui vous habite !
+                </p>
+            </div>
+            <div>
+                <img src="Images/homme_masqué.png" alt="homme masqué" width="20%">
+            </div>
+        </div>
+        <div class="grille">
+            <div>
+                <p>
+                    Vous obéissez et découvrez avec stupeur le symbole ci-contre tatoué dans la paume de votre main.
+                    Sans comprendre comment les Forsaken ont pu réussir leur tour de passe-passe, vous commencez à
+                    analyser cette étrange marque. L’homme reprend :
+                </p>
+                <p id="TexteRaconté">
+                    Déchiffrer cette marque c’est comprendre à quel élément votre esprit est rattaché. Approchez alors
+                    de l’objet qui portera en lui pour toujours, votre premier souffle de magie, le plus pur et le plus
+                    innocent.
+                </p>
+            </div>
+            <div>
+                <img src="Images/kanji.png" alt="kanji" width="20%">
+            </div>
+        </div>
+        <p>
+            En relevant la tête, vous comptabilisez sept objets qui flottent au dessus de tout le monde en décrivant une
+            orbite circulaire autour de la pièce. Après quelques secondes, ils ralentissent afin de se positionner au
+            sol au centre de la pièce. Les premiers candidats s'avancent et arrivent à soulever un des sept objets.
+            Cependant, vous constatez avec stress que c'est bientôt votre tour mais que vous ne savez toujours pas vers
+            quel objet vous rendre. Il faut faire vite, une personne de plus vient encore de réussir ...
+        </p>
+        <p id="consigne">
+            Indiquez la signification du symbole trouvé sur votre main
+        </p>
+        <input type="text" id="kanji" style="display:inline">
+        <button onclick="VerifKanji()"> Valider </button>
+        <p id="fleche" style="display:none"> &#8595 </p>
+    </section>
+
+    <section id="hide" style="display:none">
+        <p id="consigne">
+            Cliquez sur l'image de l'objet que vous choisissez.
+        </p>
+        <style>
+            .aCentrer {
+                text-align: center;
+            }
+        </style>
+        <div class="grille2">
+            <div>
+                <p class="aCentrer"> La plume de corbeau </p>
+                <img src="Images/Liste_objets/plume-corbeau.png" onclick="faux()" alt="plume" width="40%">
+            </div>
+            <div>
+                <p class="aCentrer"> La branche de chêne centenaire </p>
+                <img src="Images/Liste_objets/branche_chene.png" onclick="faux()" alt="branche" width="40%">
+            </div>
+            <div>
+                <p class="aCentrer"> La bougie noire </p>
+                <img src="Images/Liste_objets/bougie_noire.png" onclick="faux()" alt="bougie" width="40%">
+            </div>
+            <div>
+                <p class="aCentrer"> Le flacon de larmes de nymphes </p>
+                <img src="Images/Liste_objets/flacon.png" onclick="faux()" alt="flacon" width="40%">
+            </div>
+        </div>
+        <div class="grille3">
+            <div>
+                <p class="aCentrer"> Le flocon de neige </p>
+                <img src="Images/Liste_objets/flocon.png" onclick="faux()" alt="flocon" width="40%">
+            </div>
+            <div>
+                <p class="aCentrer"> L'aimant </p>
+                <img src="Images/Liste_objets/aimant.png" onclick="faux()" alt="aimant" width="40%">
+            </div>
+            <div>
+                <p class="aCentrer"> La pierre de lune </p>
+                <img src="Images/Liste_objets/pierre_de_lune.png" onclick="vraie()" alt="pierre de lune" width="40%">
+            </div>
+        </div>
+    </section>
+    <p id="hide2" style="display: none;">
+        <a href="4_1-Parchemin_volant.html"> Découvrez la suite des événements</a>
+    </p>
+</body>
+
+</html>

@@ -1,0 +1,27 @@
+html {
+    background-color: black;
+    color: white;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+
+h1 {
+    color: cyan;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration-line: underline;
+    text-decoration-style: double;
+    text-decoration-color: red;
+}
+
+h4 {
+    color:red;
+    text-decoration-line: underline;
+    text-decoration-style: wavy;
+    text-decoration-color: cyan;
+    text-align: center;
+}
+
+a {
+    color:gold;
+}

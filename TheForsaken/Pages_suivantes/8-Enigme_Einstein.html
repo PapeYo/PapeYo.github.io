@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homemade Einstein Riddle</title>
+    <link rel="stylesheet" href="package css.css">
+    <script type="text/javascript" src="JS_Einstein.js"></script>
+</head>
+
+<header>
+    <h1> Qui a volé le Codex Gigas ? </h1>
+</header>
+<style>
+    select {
+        text-align: center;
+        width: 15em;
+    }
+
+    ol li::marker {
+        color: gold;
+        font-weight: bold;
+    }
+</style>
+
+<body>
+    <p>
+        Au fur et à mesure de votre enquête au sein de la bibliothèque, vous obtenez de nombreuses informations
+        concernant les personnes suspectes de ce vol. Après une bonne heure d'interrogatoire aux quatres coins du
+        bâtiment, vous vous retrouvez avec 15 informations qui semblent se recouper pour vous permettre d'identifier le
+        voleur. A votre tour de jouer mais ne perdez pas trop de temps, la bibliothèque ne va pas tarder à fermer ses
+        portes.
+    </p>
+    <details>
+        <summary>
+            Einstein Riddle revisité
+        </summary>
+        <table border="1" style="text-align: center; margin: auto;">
+            <tbody>
+                <tr>
+                    <th scope="row"> Allée </th>
+                    <td> 1 </td>
+                    <td> 2 </td>
+                    <td> 3 </td>
+                    <td> 4 </td>
+                    <td> 5 </td>
+                </tr>
+                <tr>
+                    <th scope="row"> Vêtement </th>
+                    <td>
+                        <select name="vetement" id="choix_vetement1">
+                            <option value="">Vêtement 1</option>
+                            <option value="T-shirt">T-shirt AC/DC</option>
+                            <option value="Santiags">Santiags</option>
+                            <option value="Cape">Cape</option>
+                            <option value="Bonnet bleu">Bonnet bleu</option>
+                            <option value="Manteau">Manteau en cuir</option>
+                    </td>
+                    <td>
+                        <select name="vetement" id="choix_vetement2">
+                            <option value="">Vêtement 2</option>
+                            <option value="T-shirt">T-shirt AC/DC</option>
+                            <option value="Santiags">Santiags</option>
+                            <option value="Cape">Cape</option>
+                            <option value="Bonnet bleu">Bonnet bleu</option>
+                            <option value="Manteau">Manteau en cuir</option>
+                    </td>
+                    <td>
+                        <select name="vetement" id="choix_vetement3">
+                            <option value="">Vêtement 3</option>
+                            <option value="T-shirt">T-shirt AC/DC</option>
+                            <option value="Santiags">Santiags</option>
+                            <option value="Cape">Cape</option>
+                            <option value="Bonnet bleu">Bonnet bleu</option>
+                            <option value="Manteau">Manteau en cuir</option>
+                    </td>
+                    <td>
+                        <select name="vetement" id="choix_vetement4">
+                            <option value="">Vêtement 4</option>
+                            <option value="T-shirt">T-shirt AC/DC</option>
+                            <option value="Santiags">Santiags</option>
+                            <option value="Cape">Cape</option>
+                            <option value="Bonnet bleu">Bonnet bleu</option>
+                            <option value="Manteau">Manteau en cuir</option>
+                    </td>
+                    <td>
+                        <select name="vetement" id="choix_vetement5">
+                            <option value="">Vêtmement 5</option>
+                            <option value="T-shirt">T-shirt AC/DC</option>
+                            <option value="Santiags">Santiags</option>
+                            <option value="Cape">Cape</option>
+                            <option value="Bonnet bleu">Bonnet bleu</option>
+                            <option value="Manteau">Manteau en cuir</option>
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row"> Element magique </th>
+                    <td>
+                        <select name="element" id="choix_element1">
+                            <option value="">Elément magique 1</option>
+                            <option value="Air">Air</option>
+                            <option value="Electricité">Electricité</option>
+                            <option value="Terre">Terre</option>
+                            <option value="Eau">Eau</option>
+                            <option value="Feu">Feu</option>
+                        </select>
+                    </td>
+                    <td>
+                        <select name="element" id="choix_element2">
+                            <option value="">Elément magique 2</option>
+                            <option value="Air">Air</option>
+                            <option value="Electricité">Electricité</option>
+                            <option value="Terre">Terre</option>
+                            <option value="Eau">Eau</option>
+                            <option value="Feu">Feu</option>
+                        </select>
+                    </td>
+                    <td>
+                        <select name="element" id="choix_element3">
+                            <option value="">Elément magique 3</option>
+                            <option value="Air">Air</option>
+                            <option value="Electricité">Electricité</option>
+                            <option value="Terre">Terre</option>
+                            <option value="Eau">Eau</option>
+                            <option value="Feu">Feu</option>
+                        </select>
+                    </td>
+                    <td>
+                        <select name="element" id="choix_element4">
+                            <option value="">Elément magique 4</option>
+                            <option value="Air">Air</option>
+                            <option value="Electricité">Electricité</option>
+                            <option value="Terre">Terre</option>
+                            <option value="Eau">Eau</option>
+                            <option value="Feu">Feu</option>
+                        </select>
+                    </td>
+                    <td>
+                        <select name="element" id="choix_element5">
+                            <option value="">Elément magique 5</option>
+                            <option value="Air">Air</option>
+                            <option value="Electricité">Electricité</option>
+                            <option value="Terre">Terre</option>
+                            <option value="Eau">Eau</option>
+                            <option value="Feu">Feu</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row"> Signe distinctif </th>
+                    <td>
+                        <select name="signe" id="choix_signe1">
+                            <option value="">Signe distinctif 1</option>
+                            <option value="Doigt manquant">Doigt manquant</option>
+                            <option value="Gros nez">Gros nez</option>
+                            <option value="Barbe blanche">Barbe blanche</option>
+                            <option value="Chevalière en or">Chevalière en or</option>
+                            <option value="Très grand">Très grand</option>
+                        </select>
+                    </td>
+                    <td>
+                        <select name="signe" id="choix_signe2">
+                            <option value="">Signe distinctif 2</option>
+                            <option value="Doigt manquant">Doigt manquant</option>
+                            <option value="Gros nez">Gros nez</option>
+                            <option value="Barbe blanche">Barbe blanche</option>
+                            <option value="Chevalière en or">Chevalière en or</option>
+                            <option value="Très grand">Très grand</option>
+                        </select>
+                    </td>
+                    <td>
+                        <select name="signe" id="choix_signe3">
+                            <option value="">Signe distinctif 3</option>
+                            <option value="Doigt manquant">Doigt manquant</option>
+                            <option value="Gros nez">Gros nez</option>
+                            <option value="Barbe blanche">Barbe blanche</option>
+                            <option value="Chevalière en or">Chevalière en or</option>
+                            <option value="Très grand">Très grand</option>
+                        </select>
+                    </td>
+                    <td>
+                        <select name="signe" id="choix_signe4">
+                            <option value="">Signe distinctif 4</option>
+                            <option value="Doigt manquant">Doigt manquant</option>
+                            <option value="Gros nez">Gros nez</option>
+                            <option value="Barbe blanche">Barbe blanche</option>
+                            <option value="Chevalière en or">Chevalière en or</option>
+                            <option value="Très grand">Très grand</option>
+                        </select>
+                    </td>
+                    <td>
+                        <select name="signe" id="choix_signe5">
+                            <option value="">Signe distinctif 5</option>
+                            <option value="Doigt manquant">Doigt manquant</option>
+                            <option value="Gros nez">Gros nez</option>
+                            <option value="Barbe blanche">Barbe blanche</option>
+                            <option value="Chevalière en or">Chevalière en or</option>
+                            <option value="Très grand">Très grand</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row"> Livre </th>
+                    <td>
+                        <select name="livre" id="choix_livre1">
+                            <option value="">Livre 1</option>
+                            <option value="Aureus">Codex Aureus</option>
+                            <option value="Gigas">Codex Gigas</option>
+                            <option value="Sinaiticus">Codex Sinaiticus</option>
+                            <option value="Argenteus">Codex Argenteus</option>
+                            <option value="Atlanticus">Codex Atlanticus</option>
+                        </select>
+                    </td>
+                    <td>
+                        <select name="livre" id="choix_livre2">
+                            <option value="">Livre 2</option>
+                            <option value="Aureus">Codex Aureus</option>
+                            <option value="Gigas">Codex Gigas</option>
+                            <option value="Sinaiticus">Codex Sinaiticus</option>
+                            <option value="Argenteus">Codex Argenteus</option>
+                            <option value="Atlanticus">Codex Atlanticus</option>
+                        </select>
+                    </td>
+                    <td>
+                        <select name="livre" id="choix_livre3">
+                            <option value="">Livre 3</option>
+                            <option value="Aureus">Codex Aureus</option>
+                            <option value="Gigas">Codex Gigas</option>
+                            <option value="Sinaiticus">Codex Sinaiticus</option>
+                            <option value="Argenteus">Codex Argenteus</option>
+                            <option value="Atlanticus">Codex Atlanticus</option>
+                        </select>
+                    </td>
+                    <td>
+                        <select name="livre" id="choix_livre4">
+                            <option value="">Livre 4</option>
+                            <option value="Aureus">Codex Aureus</option>
+                            <option value="Gigas">Codex Gigas</option>
+                            <option value="Sinaiticus">Codex Sinaiticus</option>
+                            <option value="Argenteus">Codex Argenteus</option>
+                            <option value="Atlanticus">Codex Atlanticus</option>
+                        </select>
+                    </td>
+                    <td>
+                        <select name="livre" id="choix_livre5">
+                            <option value="">Livre 5</option>
+                            <option value="Aureus">Codex Aureus</option>
+                            <option value="Gigas">Codex Gigas</option>
+                            <option value="Sinaiticus">Codex Sinaiticus</option>
+                            <option value="Argenteus">Codex Argenteus</option>
+                            <option value="Atlanticus">Codex Atlanticus</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row"> Nom du mage </th>
+                    <td>
+                        <select name="mage" id="choix_mage1">
+                            <option value="">Nom du mage 1</option>
+                            <option value="Taphior">Taphior Bukius Oveus</option>
+                            <option value="Cacius">Cacius Stanislas Uvbin</option>
+                            <option value="Koleas">Koleas Yravae Aneqille</option>
+                            <option value="Esorin">Esorin Ulidius Osgroln</option>
+                            <option value="Aethal">Aethal Fitaris Braxea</option>
+                        </select>
+                    </td>
+                    <td>
+                        <select name="mage" id="choix_mage2">
+                            <option value="">Nom du mage 2</option>
+                            <option value="Taphior">Taphior Bukius Oveus</option>
+                            <option value="Cacius">Cacius Stanislas Uvbin</option>
+                            <option value="Koleas">Koleas Yravae Aneqille</option>
+                            <option value="Esorin">Esorin Ulidius Osgroln</option>
+                            <option value="Aethal">Aethal Fitaris Braxea</option>
+                        </select>
+                    </td>
+                    <td>
+                        <select name="mage" id="choix_mage3">
+                            <option value="">Nom du mage 3</option>
+                            <option value="Taphior">Taphior Bukius Oveus</option>
+                            <option value="Cacius">Cacius Stanislas Uvbin</option>
+                            <option value="Koleas">Koleas Yravae Aneqille</option>
+                            <option value="Esorin">Esorin Ulidius Osgroln</option>
+                            <option value="Aethal">Aethal Fitaris Braxea</option>
+                        </select>
+                    </td>
+                    <td>
+                        <select name="mage" id="choix_mage4">
+                            <option value="">Nom du mage 4</option>
+                            <option value="Taphior">Taphior Bukius Oveus</option>
+                            <option value="Cacius">Cacius Stanislas Uvbin</option>
+                            <option value="Koleas">Koleas Yravae Aneqille</option>
+                            <option value="Esorin">Esorin Ulidius Osgroln</option>
+                            <option value="Aethal">Aethal Fitaris Braxea</option>
+                        </select>
+                    </td>
+                    <td>
+                        <select name="mage" id="choix_mage5">
+                            <option value="">Nom du mage 5</option>
+                            <option value="Taphior">Taphior Bukius Oveus</option>
+                            <option value="Cacius">Cacius Stanislas Uvbin</option>
+                            <option value="Koleas">Koleas Yravae Aneqille</option>
+                            <option value="Esorin">Esorin Ulidius Osgroln</option>
+                            <option value="Aethal">Aethal Fitaris Braxea</option>
+                        </select>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <ol> <strong> <u> Les indices :</u> </strong>
+            <li>
+                <input type="checkbox" id="check1" onclick="barrer()">
+                <p id="ind1" style="display: inline;"> Le mage de l'élément Terre est passé à côté d'Aethal </p>
+            </li>
+            <li>
+                <input type="checkbox" id="check2" onclick="barrer()">
+                <p id="ind2" style="display: inline;"> Le mage de l'élément Eau se nomme Esorin </p>
+            </li>
+            <li>
+                <input type="checkbox" id="check3" onclick="barrer()">
+                <p id="ind3" style="display: inline;"> Le mage de l'élément Electricité a dérobé de le Codex Aureus </p>
+            </li>
+            <li>
+                <input type="checkbox" id="check4" onclick="barrer()">
+                <p id="ind4" style="display: inline;"> Le mage de l'élément Air a un doigt manquant </p>
+            </li>
+            <li>
+                <input type="checkbox" id="check5" onclick="barrer()">
+                <p id="ind5" style="display: inline;"> Le mage ayant un bonnet bleu a dérobé le Codex Sinaiticus </p>
+            </li>
+            <li>
+                <input type="checkbox" id="check6" onclick="barrer()">
+                <p id="ind6" style="display: inline;"> Le mage ayant des santiags se nomme Koleas </p>
+            </li>
+            <li>
+                <input type="checkbox" id="check7" onclick="barrer()">
+                <p id="ind7" style="display: inline;"> Le mage qui est passé dans l'allée n°3 a un gros nez </p>
+            </li>
+            <li>
+                <input type="checkbox" id="check8" onclick="barrer()">
+                <p id="ind8" style="display: inline;"> Le mage ayant une cape est passé à côté du mage ayant dérobé le
+                    Codex
+                    Argenteus </p>
+            </li>
+            <li>
+                <input type="checkbox" id="check9" onclick="barrer()">
+                <p id="ind9" style="display: inline;"> Le mage ayant dérobé le Codex Atlanticus est passé à côté du mage
+                    ayant des Santiags </p>
+            </li>
+            <li>
+                <input type="checkbox" id="check10" onclick="barrer()">
+                <p id="ind10" style="display: inline;"> Le mage possédant un T-Shirt AC/DC a une barbe blanche </p>
+            </li>
+            <li>
+                <input type="checkbox" id="check11" onclick="barrer()">
+                <p id="ind11" style="display: inline;"> Le mage de l'élément Feu a un manteau en cuir </p>
+            </li>
+            <li>
+                <input type="checkbox" id="check12" onclick="barrer()">
+                <p id="ind12" style="display: inline;"> Le mage qui est passé dans l'allée n°1 est lié à l'élément Terre
+                </p>
+            </li>
+            <li>
+                <input type="checkbox" id="check13" onclick="barrer()">
+                <p id="ind13" style="display: inline;"> Le mage ayant une cape est passé à côté du mage très grand </p>
+            </li>
+            <li>
+                <input type="checkbox" id="check14" onclick="barrer()">
+                <p id="ind14" style="display: inline;"> Le mage nommé Cacius est passé juste à gauche de celui nommé
+                    Taphior
+                </p>
+            </li>
+            <li>
+                <input type="checkbox" id="check15" onclick="barrer()">
+                <p id="ind15" style="display: inline;"> Le mage nommé Cacius possède une chevalière en or </p>
+            </li>
+        </ol>
+        Valider votre tableau et par conséquent votre réponse :
+        <button type="button" onclick="verif()"> Valider </button>
+        <p id="suite" style="display:none"> Voilà la suite </p>
+    </details>
+</body>
+
+</html>
