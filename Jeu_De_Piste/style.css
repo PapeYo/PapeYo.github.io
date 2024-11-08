@@ -1,9 +1,3 @@
-h2 {
-    text-align: center;
-    text-decoration: underline;
-    color: red;
-}
-
 div {
     text-align: center;
     font-family: "Brush Script MT", cursive;
@@ -13,10 +7,6 @@ div {
 
 header {
     text-align: center;
-}
-
-#defi {
-    color: green;
 }
 
 #toDecode {
